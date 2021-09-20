@@ -43,5 +43,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Acciones\" />
+    <Folder Include="Base\" />
+    <Folder Include="Constantes\" />
+    <Folder Include="Excels\" />
+    <Folder Include="Literales\" />
+    <Folder Include="Reportes\" />
+    <Folder Include="Selectores\" />
+    <Folder Include="Tareas\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
