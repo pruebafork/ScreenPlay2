@@ -110,10 +110,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\CuadrosFrames.cs" />
+    <Compile Include="Acciones\Esperar.cs" />
     <Compile Include="Acciones\HacerClick.cs" />
     <Compile Include="Acciones\Elemento.cs" />
     <Compile Include="Acciones\Escribir.cs" />
     <Compile Include="Acciones\EsperarHasta.cs" />
+    <Compile Include="Acciones\MoverHacia.cs" />
     <Compile Include="Acciones\PintarDespintar.cs" />
     <Compile Include="Acciones\Seleccionar.cs" />
     <Compile Include="Bases\Base.cs" />

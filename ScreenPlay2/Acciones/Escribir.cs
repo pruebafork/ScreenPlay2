@@ -18,11 +18,32 @@ namespace ScreenPlay2.Acciones
                 element.SendKeys(text);
                 report.addLogScreenCapture(Status.Pass, $"Fue posible ingresar el texto '{text}'");
                 PintarDespintar.HighLighterMethodOff(Driver.GetInstance(), locator);
-                EsperarHasta.Time1();
+                Esperar.Time1();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 report.addLogScreenCapture(Status.Fail, $"No fue posible ingresar el texto '{text}'");
+                throw ex;
+            }
+        }
+
+        public static void EscribirTeclaAbajoEnter(By locator, string text, Reporte report)
+        {
+            try
+            {
+                var element = Driver.driver.FindElement(locator);
+                PintarDespintar.HighLighterMethod(Driver.GetInstance(), locator);
+                element.Clear();
+                element.SendKeys(text);
+                element.SendKeys(Keys.ArrowDown + Keys.Enter);
+                report.addLogScreenCapture(Status.Pass, $"Fue posible ingresar el texto '{text}'");
+                PintarDespintar.HighLighterMethodOff(Driver.GetInstance(), locator);
+                Esperar.Time1();
+            }
+            catch (Exception ex)
+            {
+                report.addLogScreenCapture(Status.Fail, $"No fue posible ingresar el texto '{text}'");
+                throw ex;
             }
         }
     }

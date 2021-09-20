@@ -15,7 +15,7 @@ namespace ScreenPlay2.Tareas
         {
             Escribir.SendKeys(CajaTexto.username, user, report);
             Escribir.SendKeys(CajaTexto.password, pass, report);
-            HacerClick.ClickOnReport(Boton.login, report, "Logeo");
+            HacerClick.Click(Boton.login, report, "Logeo");
         }
     }
 }

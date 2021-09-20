@@ -16,7 +16,7 @@ namespace ScreenPlay2.Acciones
                 var element = Elemento.On(locator);
                 var dropdownElement = new SelectElement(element);
                 dropdownElement.SelectByText(text);
-                EsperarHasta.Time1();
+                Esperar.Time1();
                 report.addLogScreenCapture(Status.Pass, $"Se hizo click en la opcion: '{text}'");
             }
             catch (Exception)
@@ -33,7 +33,7 @@ namespace ScreenPlay2.Acciones
                 var element = Elemento.On(locator);
                 var dropdownElement = new SelectElement(element);
                 dropdownElement.SelectByValue(value);
-                EsperarHasta.Time1();
+                Esperar.Time1();
                 report.addLogScreenCapture(Status.Pass, $"Se hizo click en la opcion: '{value}'");
             }
             catch (Exception)
@@ -50,7 +50,7 @@ namespace ScreenPlay2.Acciones
                 var element = Elemento.On(locator);
                 var dropdownElement = new SelectElement(element);
                 dropdownElement.SelectByIndex(index);
-                EsperarHasta.Time1();
+                Esperar.Time1();
                 report.addLogScreenCapture(Status.Pass, $"Se hizo click en la opcion: '{index}'");
             }
             catch (Exception)
