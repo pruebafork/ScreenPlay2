@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace ScreenPlay2.Selectores
 {
-    class Boton
+    public static class Boton
     {
+        public static By login = By.XPath("//input[@id='btnLogin']");
     }
 }

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace ScreenPlay2.Selectores
 {
-    class CajaTexto
+    public static class CajaTexto
     {
+        public static By username = By.XPath("//input[@id='txtUsername']");
+        public static By password = By.XPath("//input[@id='txtPassword']");
     }
 }
