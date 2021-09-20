@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\Base.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Acciones\" />
-    <Folder Include="Base\" />
     <Folder Include="Constantes\" />
     <Folder Include="Excels\" />
     <Folder Include="Literales\" />
