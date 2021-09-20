@@ -11,7 +11,6 @@ namespace ScreenPlay2.Bases
         public string URL;
         public string idUser;
         public string passUser;
-
         public static Reporte report = new Reporte();
         public int count = 0;
         private string testName;
@@ -34,7 +33,7 @@ namespace ScreenPlay2.Bases
             Driver.driver.Url = URL;
             this.testName = TestContext.CurrentContext.Test.Name;
             this.downloadPath = Environment.GetEnvironmentVariable("USERPROFILE") + @"\Downloads";
-            Driver.Indice = 1;
+            report.test = report.extent.CreateTest(TestContext.CurrentContext.Test.Name);
         }
 
         [TearDown]

@@ -1,6 +1,6 @@
 ﻿namespace ScreenPlay2.Selectores
 {
-    class Seleccionar
+    class Seleccion
     {
     }
 }

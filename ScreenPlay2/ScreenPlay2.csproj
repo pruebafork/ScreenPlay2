@@ -115,6 +115,7 @@
     <Compile Include="Acciones\Escribir.cs" />
     <Compile Include="Acciones\EsperarHasta.cs" />
     <Compile Include="Acciones\PintarDespintar.cs" />
+    <Compile Include="Acciones\Seleccionar.cs" />
     <Compile Include="Bases\Base.cs" />
     <Compile Include="Bases\Driver.cs" />
     <Compile Include="Constantes\Constante.cs" />
@@ -127,7 +128,7 @@
     <Compile Include="Reportes\Reporte.cs" />
     <Compile Include="Selectores\Boton.cs" />
     <Compile Include="Selectores\CajaTexto.cs" />
-    <Compile Include="Selectores\Seleccionar.cs" />
+    <Compile Include="Selectores\Seleccion.cs" />
     <Compile Include="Tareas\Logeo.cs" />
     <Compile Include="Tests\Prueba.cs" />
   </ItemGroup>
