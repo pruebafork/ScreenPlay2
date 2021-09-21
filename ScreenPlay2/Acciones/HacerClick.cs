@@ -16,10 +16,8 @@ namespace ScreenPlay2.Acciones
             {
                 WebDriverWait wait2 = new WebDriverWait(Driver.driver, TimeSpan.FromSeconds(10));
                 IWebElement firstResult = wait2.Until<IWebElement>(e => e.FindElement(By.XPath(locator.ToString())));
-                
                 //WebDriverWait wait = new WebDriverWait(Driver.GetInstance(), TimeSpan.FromMilliseconds(10000));
                 //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(locator));
-                
                 var element = Driver.driver.FindElement(locator);
                 var action = new Actions(Driver.driver);
                 action.MoveToElement(element).Build().Perform();
