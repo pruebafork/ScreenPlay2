@@ -41,9 +41,9 @@ namespace ScreenPlay2.Bases
             {
                 case "Chrome":
                     ChromeOptions google = new ChromeOptions();
-                    //google.AddArgument("no-sandbox");
-                    //google.AddArgument("--disable-infobars");
-                    //google.AddArgument("--start-maximized");
+                    google.AddArgument("no-sandbox");
+                    google.AddArgument("--disable-infobars");
+                    google.AddArgument("--start-maximized");
                     Driver.SetInstance(new ChromeDriver(google));
                     break;
                 case "Firefox":
