@@ -40,4 +40,3 @@ C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPla
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.csproj.CopyComplete
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.dll
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.pdb
-C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.csproj.AssemblyReference.cache

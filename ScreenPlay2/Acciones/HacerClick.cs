@@ -1,6 +1,7 @@
 ﻿using AventStack.ExtentReports;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
 using ScreenPlay2.Bases;
 using ScreenPlay2.Reportes;
 using System;
@@ -13,7 +14,9 @@ namespace ScreenPlay2.Acciones
         {
             try
             {
-                EsperarHasta.ElementIsClickeable(locator);
+                //EsperarHasta.ElementIsClickeable(locator);
+                WebDriverWait wait = new WebDriverWait(Driver.GetInstance(), TimeSpan.FromMilliseconds(10000));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(locator));
                 var element = Driver.driver.FindElement(locator);
                 var action = new Actions(Driver.driver);
                 action.MoveToElement(element).Build().Perform();
