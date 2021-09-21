@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using ScreenPlay2.Registros;
 using System;
 
@@ -39,11 +40,18 @@ namespace ScreenPlay2.Bases
             switch (navegador)
             {
                 case "Chrome":
-                    ChromeOptions options = new ChromeOptions();
-                    options.AddArgument("--no-sandbox");
-                    options.AddArgument("--disable-infobars");
-                    options.AddArgument("--start-maximized");
-                    Driver.SetInstance(new ChromeDriver(options));
+                    ChromeOptions google = new ChromeOptions();
+                    google.AddArgument("--no-sandbox");
+                    google.AddArgument("--disable-infobars");
+                    google.AddArgument("--start-maximized");
+                    Driver.SetInstance(new ChromeDriver(google));
+                    break;
+                case "Firefox":
+                    FirefoxDriver fire = new FirefoxDriver();
+                    //fire.AddArgument("--no-sandbox");
+                    //fire.AddArgument("--disable-infobars");
+                    //fire.AddArgument("--start-maximized");
+                    Driver.SetInstance(new FirefoxDriver());
                     break;
             }
         }

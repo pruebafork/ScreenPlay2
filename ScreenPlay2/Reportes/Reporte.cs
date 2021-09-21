@@ -1,11 +1,13 @@
 ﻿using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports.Reporter.Configuration;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using ScreenPlay2.Bases;
 using System;
 using System.IO;
 using System.Net;
+using System.Web.Configuration;
 
 namespace ScreenPlay2.Reportes
 {
@@ -13,6 +15,7 @@ namespace ScreenPlay2.Reportes
     {
         public ExtentReports extent;
         public ExtentTest test;
+        private string testName;
 
         public void StartTest()
         {
@@ -20,11 +23,11 @@ namespace ScreenPlay2.Reportes
             string pth = System.Reflection.Assembly.GetCallingAssembly().CodeBase;
             string actualPath = pth.Substring(0, pth.LastIndexOf("bin"));
             string projectPah = new Uri(actualPath).LocalPath;
-            //var browser = WebConfigurationManager.AppSettings["browser"].ToString();
-            var browser = "Chrome";
-            //var idUser = WebConfigurationManager.AppSettings["idUser"].ToString();
-            var idUser = "Alexis";
-            String fileNameHtml = "ReportTestingAutmated_" + time.ToString("h_mm_ss") + idUser + ".html";
+            var browser = WebConfigurationManager.AppSettings["browser"].ToString();
+            var idUser = WebConfigurationManager.AppSettings["idUser"].ToString();
+            this.testName = TestContext.CurrentContext.Test.Name;
+            //String fileNameHtml = testName + time.ToString("h_mm_ss") + idUser + ".html";
+            String fileNameHtml = testName + "-" + time.Day + "-" + time.Month + "-" + time.Year + "--" + time.Hour + "-" + time.Minute  + "-" +time.Millisecond + idUser + ".html";
             string reportPath = projectPah + "Reports\\" + fileNameHtml;
             var htmlReporter = new ExtentHtmlReporter(reportPath);
             extent = new ExtentReports();
