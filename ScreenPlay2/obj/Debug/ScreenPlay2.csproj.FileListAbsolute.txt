@@ -36,6 +36,7 @@ C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\bin\Debug\System.IO
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\bin\Debug\System.Web.Razor.xml
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\bin\Debug\WebDriver.xml
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\bin\Debug\WebDriver.Support.xml
+C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.csproj.AssemblyReference.cache
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.csproj.CoreCompileInputs.cache
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.csproj.CopyComplete
 C:\Users\Alexis Medrano\source\repos\ScreenPlay2\ScreenPlay2\obj\Debug\ScreenPlay2.dll
