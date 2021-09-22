@@ -13,7 +13,7 @@ namespace ScreenPlay2.Tests
             try
             {
                 //report.test = report.extent.CreateTest(TestContext.CurrentContext.Test.Name, "Logearse");
-                Logeo.Loge(report);
+                Logeo.Logear(report);
             }
             catch (Exception)
             { }

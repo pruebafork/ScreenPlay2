@@ -8,7 +8,7 @@ namespace ScreenPlay2.Acciones
 {
     public static class Seleccionar
     {
-        public static void SeleccionarPorText(By locator, Reporte report, string text)
+        public static void SeleccionarPorTexto(By locator, Reporte report, string text)
         {
             try
             {
@@ -25,7 +25,7 @@ namespace ScreenPlay2.Acciones
             }
         }
 
-        public static void SeleccionarPorValue(By locator, Reporte report, string value)
+        public static void SeleccionarPorValor(By locator, Reporte report, string value)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace ScreenPlay2.Acciones
             }
         }
 
-        public static void SeleccionarPorIndex(By locator, Reporte report, int index)
+        public static void SeleccionarPorPosicion(By locator, Reporte report, int index)
         {
             try
             {

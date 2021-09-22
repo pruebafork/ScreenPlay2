@@ -1,6 +1,8 @@
-﻿namespace ScreenPlay2.Selectores
+﻿using OpenQA.Selenium;
+
+namespace ScreenPlay2.Selectores
 {
-    class Seleccion
+    public static class Seleccion
     {
     }
 }

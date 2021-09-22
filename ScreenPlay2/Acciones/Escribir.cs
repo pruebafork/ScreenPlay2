@@ -8,10 +8,11 @@ namespace ScreenPlay2.Acciones
 {
     public static class Escribir
     {
-        public static void SendKeys(By locator, string text, Reporte report)
+        public static void Escribiendo(By locator, string text, Reporte report)
         {
             try
             {
+                Driver.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
                 var element = Driver.driver.FindElement(locator);
                 PintarDespintar.HighLighterMethod(Driver.GetInstance(), locator);
                 element.Clear();
