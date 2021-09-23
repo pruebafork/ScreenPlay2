@@ -31,5 +31,7 @@ namespace ScreenPlay2.Acciones
             var fecha = DateTime.Now.Year;
             return fecha.ToString();
         }
+
+
     }
 }

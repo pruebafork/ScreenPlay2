@@ -111,7 +111,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acciones\AdjuntarArchivo.cs" />
+    <Compile Include="Acciones\Alerta.cs" />
     <Compile Include="Acciones\CuadrosFrames.cs" />
+    <Compile Include="Acciones\Enter.cs" />
     <Compile Include="Acciones\Esperar.cs" />
     <Compile Include="Acciones\Fecha.cs" />
     <Compile Include="Acciones\HacerClick.cs" />
@@ -123,6 +125,9 @@
     <Compile Include="Acciones\Seleccionar.cs" />
     <Compile Include="Bases\Base.cs" />
     <Compile Include="Bases\Driver.cs" />
+    <Compile Include="CodigosUtiles\Ciclos\For.cs" />
+    <Compile Include="CodigosUtiles\LlamadaSelectores\Llamada.cs" />
+    <Compile Include="CodigosUtiles\Selectores\Botones.cs" />
     <Compile Include="Constantes\Constante.cs" />
     <Compile Include="Literales\Valores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,7 +140,9 @@
     <Compile Include="Selectores\CajaTexto.cs" />
     <Compile Include="Selectores\Seleccion.cs" />
     <Compile Include="Tareas\Logeo.cs" />
+    <Compile Include="Tareas\Menu.cs" />
     <Compile Include="Tests\Prueba.cs" />
+    <Compile Include="Tests\PruebaMenu.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
