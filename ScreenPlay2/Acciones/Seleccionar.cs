@@ -1,6 +1,7 @@
 ﻿using AventStack.ExtentReports;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using ScreenPlay2.Bases;
 using ScreenPlay2.Reportes;
 using System;
 
@@ -15,9 +16,11 @@ namespace ScreenPlay2.Acciones
                 EsperarHasta.ElementIsClickeable(locator);
                 var element = Elemento.On(locator);
                 var dropdownElement = new SelectElement(element);
+                PintarDespintar.HighLighterMethod(Driver.GetInstance(), locator);
                 dropdownElement.SelectByText(text);
                 Esperar.Time1();
                 report.addLogScreenCapture(Status.Pass, $"Se hizo click en la opcion: '{text}'");
+                PintarDespintar.HighLighterMethodOff(Driver.GetInstance(), locator);
             }
             catch (Exception)
             {

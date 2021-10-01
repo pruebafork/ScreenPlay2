@@ -10,6 +10,20 @@ namespace ScreenPlay2.Selectores
 
         public static By menu = By.XPath("//li[@class='main-menu-first-level-list-item']");
 
+        public static By username = By.XPath("//input[@id='txtUsername']");
+
+        public static By myInfo = By.XPath("//a[@id='menu_pim_viewMyDetails']");
+        public static By edit = By.XPath("//input[@id='btnSave']");
+
+
+
+
+
+
+
+
+
+
 
 
         public static void setMenu(string valor)
